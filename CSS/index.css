@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: #000000;
+}
+
+.sec{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-video{
+    height: 90dvh;
+    border-radius: 5px;
+}
+.home-video-1{
+    height: 95dvh;
+    position: absolute;
+    z-index: -1;
+    filter: blur(221px);
+    opacity: 0.8;
+}
+
+/*Header CSS STARTS*/
+header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    cursor: default;
+    margin: 0px;
+    background: transparent;
+    width: 100%;
+    animation: up-down 0.5s 1 alternate  cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+}
+
+.main-header{
+    border-radius: 300px;
+    background: #161617b4;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    display: flex;
+    height: 30px;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    margin: 12px;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.text{  
+    color: #ffff;
+    margin: 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*HEADERCSSDONR*/
+
+@keyframes up-down {
+    0%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+.main-header:hover{
+    padding: 8px 27px;
+}
+
+.p-0{
+    font-size: 70px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+.span-0{
+    color: transparent;
+    font-family: 'Madimi One';
+    background: -webkit-linear-gradient(90deg, hsla(307, 93%, 84%, 1) 0%, hsla(256, 96%, 44%, 1) 100%);
+    background-clip: text;
+}
+
+
+/*display css starts*/
+
+.sec-of-display-1{
+    height: 98dvh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: space-evenly;
+}
+
+#emailInput{
+    background: #2b29292f;
+    padding: 18px;
+    color: #ffffff;
+    margin: 2px;
+    border-radius: 300px;
+    border: 0;
+    width: 20%;
+    height: 12px;
+    margin: 12px;
+}
+
+#checkButton{
+    /* background: linear-gradient(93.87deg,#148e9c,#21ff69); */
+    background:  #202020;
+    padding: 14px 22px;
+    width: auto;
+    border-radius: 300px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: monospace;
+    color: #fff;
+    text-decoration: none;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+}
+#checkButton:hover{
+    transform: scale(0.96);
+}
+.display-1{
+    width: 100%;
+    text-align: center;
+}
+.part-0{
+    text-align: center;
+    width: 60%;
+}
+.logo-1 {
+    text-decoration: none;
+    color: #e4e4e4;
+    font-size: 90px;
+    font-weight: 1000;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px;
+}
+
+
+
+@media (max-width: 600px){
+    .display-1{
+        display: grid;
+        justify-items: center;
+    }
+
+    #emailInput{
+        width: 80%;
+    }
+
+    .logo-1 {
+        font-size: 70px;
+        padding: 0px;
+    }
+
+    .p-tag{
+font-size: 12px;
+    }
+
+    .part-0{
+        width: 90%;
+        padding: 12px;
+    }
+}
+
+.help-0{
+    font-size: 18px;
+    color: #ffffff8a;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s;
+}
+
+.help-0:hover{
+    color: #fff;
+}
+
+.p-tag{
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    font-size: 18px;
+    margin: 0%;
+}
+
+.img-900{
+    position: sticky;
+}
+
+.header_0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img{
+    width: 65%;
+    margin-top: -90px;
+}
+
+@media (max-width: 900px){
+    .header-img{
+        width: 100%;
+    }
+}
+.side-of-anime-0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40dvh;
+    width: 100%;
+}
+.side-of-anime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40dvh;
+    width: 85%;
+}
+
+.anime-box-0{
+    border-radius: 4px;
+    padding: 12px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.anime-box-0:hover{
+    background: #060606ea;
+}
+
+.img-01{
+    height: 200px;
+    border-radius: 4px;
+}
+
+
+.data-holder-0{
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.125rem ;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+}
+
+.title-of-anime{
+    color: #ffffff;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    margin-top: -30px;
+    font-size: 26px;
+    line-height: 1.125rem ;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+}
+
+.login-btn{
+    padding: 9px;
+    border-radius: 2px;
+    background-color: #373737;
+    color: #fff;
+    border-radius: 124px;
+    border: 0;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.logo-title{
+    color: #fff;
+    position: absolute;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+    font-size: 40px;
+}
+
+.part-1{
+    text-align: center;
+    width: 60%;
+    position: absolute;
+}
+
+@media (max-width: 670px){
+    .part-1{
+        display: none;
+    }
+
+    .side-of-anime {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 40dvh;
+        width: 85%;
+        margin: 12px;
+    }
+
+    
+.img-01{
+    height: 300px;
+    border-radius: 8px;
+}
+
+
+
+.data-holder-0{
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.125rem ;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+}
+
+}
