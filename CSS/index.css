@@ -5,14 +5,14 @@ body{
     margin: 0%;
     padding: 0%;
     background: #000000;
+    cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoMTAuNjY2NjcsMTAuNjY2NjcpIj48cGF0aCBkPSJNNSwyMy45MzJ2LTIzLjAyMWwxNy4yNDksMTUuMzMybC05LjgyMywxLjUzM3pNNyw1LjM2NHYxNC4zMTJsNC41NzQsLTMuNzkxbDYuMTc3LC0wLjk2NXoiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=") 3 0, default;
 }
 
 .sec{
     height: 100dvh;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
 }
 
 .home-video{
@@ -36,6 +36,7 @@ header{
     margin: 0px;
     background: transparent;
     width: 100%;
+    z-index: 98;
     animation: up-down 0.5s 1 alternate  cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
 }
 
@@ -45,11 +46,11 @@ header{
     backdrop-filter: blur(10px);
     height: 100%;
     display: flex;
-    height: 30px;
+    height: 29px;
     opacity: 1;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
+    padding: 8px 10px;
     margin: 12px;
     transition: all 0.3s;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -72,9 +73,6 @@ header{
     }
 }
 
-.main-header:hover{
-    padding: 8px 27px;
-}
 
 .p-0{
     font-size: 70px;
@@ -104,7 +102,7 @@ header{
 }
 
 #emailInput{
-    background: #2b29292f;
+    background: #2b2929cf;
     padding: 18px;
     color: #ffffff;
     margin: 2px;
@@ -139,6 +137,13 @@ header{
 .part-0{
     text-align: center;
     width: 60%;
+}
+.holder-0-0{
+    display: grid;
+    position: absolute;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
 }
 .logo-1 {
     text-decoration: none;
@@ -242,7 +247,7 @@ font-size: 12px;
 }
 
 .img-01{
-    height: 200px;
+    height: 260px;
     border-radius: 4px;
 }
 
@@ -264,7 +269,7 @@ font-size: 12px;
     margin-top: -30px;
     font-size: 26px;
     line-height: 1.125rem ;
-    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+    font-family: Labtnto, Helvetica Neue, helvetica, sans-serif;
 }
 
 .login-btn{
@@ -274,12 +279,16 @@ font-size: 12px;
     color: #fff;
     border-radius: 124px;
     border: 0;
-    width: 75px;
+    text-align: center;
+    width: 145px;
     display: flex;
     align-items: center;
     justify-content:center;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
-
+.login-btn:hover{
+    width: 175px;
+}
 .logo-title{
     color: #fff;
     position: absolute;
@@ -324,4 +333,146 @@ font-size: 12px;
     font-family: Lato, Helvetica Neue, helvetica, sans-serif;
 }
 
+}
+
+
+.pop-box-0{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0%;
+    background-color: #6d65e4;
+    filter: blur(100px);
+}
+
+.benifits{
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.tv-holder{
+    height: 600px;
+    border-radius: 10px;
+}
+
+.sec-0-div{
+    display: flex;
+    width: 90%;
+    padding: 44px;
+    align-items: center;
+}
+
+.info-0{
+    color: #e4e4e4;
+    font-family: Lato, Helvetica Neue, helvetica, sans-seri;
+    font-size: 40px;
+    margin: 30px;
+    font-weight: 800;
+}
+
+.spam-9{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffffe5;
+}
+
+.end{
+    height: 7px;
+    background-color: #14141460;
+    width: 95%;
+    border-radius: 90px;
+}
+.end-holder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-0{
+    width: 100%;
+    height: 60dvh;
+}
+
+.holder-90{
+    display: flex;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 57%, rgba(0, 213, 255, 0) 100%);
+    align-items: flex-end;
+
+}
+
+.info-90{
+width: 40%;
+margin: 12px;
+position: absolute;
+}
+
+.anime-name{
+    color: #fff;
+    font-family: Lato, Helvetica Neue, helvetica, sans-seri;
+    font-size: 41px;
+    font-weight: 800;
+    font-style: normal;
+    margin: 5px;
+}
+
+.ainme-des{
+    color: #e4e4e4;
+    margin: 5px;
+    font-family: Lato, Helvetica Neue, helvetica, sans-seri;
+}
+
+.wn-0{
+    /* background: linear-gradient(93.87deg,#148e9c,#21ff69); */
+    background: #1a1a1a;
+    padding: 11px 11px;
+    width: 160px;
+    margin: 19px 4px;
+    border-radius: 300px;
+    border: 1px solid;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: monospace;
+    color: #fff;
+    text-decoration: none;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+}
+.wn-0:hover{
+    transform: scale(0.96);
+}
+
+.anime-img-box{
+    height: 55dvh;
+    z-index: -1;
+}
+
+.anime-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-logo-0{
+    width: 277px;
+    margin-bottom: -40px;
+    height: 156px;
+}
+
+.user-logo{
+ height: 35px;
+ width: 35px;
+ object-fit: cover;
+ margin-right: 9px;
+ border-radius:50% ;   
+}
+
+.info-above{
+    color: #e4e4e4;
+    margin: 5px;
+    font-size: 19px;
+    text-align: center;
+    font-family: Lato, Helvetica Neue, helvetica, sans-seri;
 }
