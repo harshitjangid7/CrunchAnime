@@ -233,7 +233,9 @@ font-size: 12px;
     justify-content: center;
     align-items: center;
     height: 40dvh;
+    overflow-y: clip;
     width: 85%;
+    overflow-x: scroll;
 }
 
 .anime-box-0{
@@ -266,8 +268,9 @@ font-size: 12px;
     text-transform: capitalize;
     text-align: center;
     font-weight: 700;
-    margin-top: -30px;
+    margin: 12px;
     font-size: 26px;
+    z-index: 34;
     line-height: 1.125rem ;
     font-family: Labtnto, Helvetica Neue, helvetica, sans-serif;
 }
@@ -432,7 +435,7 @@ position: absolute;
     width: 160px;
     margin: 19px 4px;
     border-radius: 300px;
-    border: 1px solid;
+    border: 0;
     font-size: 18px;
     font-weight: 600;
     font-family: monospace;
@@ -476,3 +479,21 @@ position: absolute;
     text-align: center;
     font-family: Lato, Helvetica Neue, helvetica, sans-seri;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+  background: transparent;
+  }
+  
+  
