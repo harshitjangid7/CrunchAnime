@@ -33,7 +33,10 @@
             </div>
             <div class="anime-img">
                <!-- ? <img class="anime-img-box" src="IMG/AAAABTYmlge88J4-0ouuHWDsP8VZBuoM_3FPfGZo-YMOixHeB1qduoBni9iahxi3zkEXNvwZ4Xez_JoRDiPq3hyLRyef43_fNRUJziyD.jpg"> -->
-               <video class="anime-img-box" src="VIDEO/JUJUTSU KAISEN Shibuya Incident _ Official Trailer _ Netflix.mp4" loop autoplay></video>
+               <!-- <video class="anime-img-box" src="VIDEO/JUJUTSU KAISEN Shibuya Incident _ Official Trailer _ Netflix.mp4" loop autoplay></video> -->
+               <video class="anime-img-box" loop muted id="autoplay">
+                <source src="VIDEO/JUJUTSU-KAISEN.mp4" type="video/mp4">
+               </video>
             </div>
             
         </div>
@@ -149,5 +152,10 @@
 Please take a moment to look above at the header where you'll find a search bar. Feel free to use it to search for your favorite anime.
         </div>
       </section>
+      <script>
+        window.onload = function() {
+  document.getElementById("autoplay").play();
+}
+      </script>
 </body>
 </html>
