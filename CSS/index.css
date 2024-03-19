@@ -41,7 +41,7 @@ header{
 }
 
 .main-header{
-    border-radius: 300px;
+    border-radius: 20px;
     background: #161617b4;
     backdrop-filter: blur(10px);
     height: 100%;
@@ -52,9 +52,10 @@ header{
     align-items: center;
     padding: 8px 10px;
     margin: 12px;
-    transition: all 0.3s;
+    transition: all 0.3s;backdrop-filter
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 
 .text{  
     color: #ffff;
@@ -233,14 +234,13 @@ font-size: 12px;
     justify-content: center;
     align-items: center;
     height: 40dvh;
-    overflow-y: clip;
     width: 85%;
-    overflow-x: scroll;
 }
 
 .anime-box-0{
     border-radius: 4px;
     padding: 12px;
+    margin: 10px;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
@@ -263,14 +263,26 @@ font-size: 12px;
     font-family: Lato, Helvetica Neue, helvetica, sans-serif;
 }
 
+.data-holder-1{
+    color: transparent; 
+    background: linear-gradient(240deg, rgba(255,255,255,1) 0%, rgba(143,143,143,1) 50%, rgb(0, 0, 0) 100%);
+    text-transform: capitalize;
+    font-weight: 1000;
+    font-size: 106px;
+    position: absolute;
+    margin-top: -127px;
+    background-clip: text;
+    margin-left: -40px;
+    font-family: Lato, Helvetica Neue, helvetica, sans-serif;
+}
+
 .title-of-anime{
     color: #ffffff;
     text-transform: capitalize;
     text-align: center;
     font-weight: 700;
-    margin: 12px;
+    margin-top: -30px;
     font-size: 26px;
-    z-index: 34;
     line-height: 1.125rem ;
     font-family: Labtnto, Helvetica Neue, helvetica, sans-serif;
 }
@@ -298,7 +310,13 @@ font-size: 12px;
     font-family: Lato, Helvetica Neue, helvetica, sans-serif;
     font-size: 40px;
 }
-
+.india-0{ 
+    COLOR: TRANSPARENT;
+    background: linear-gradient(159deg, rgb(255 82 0) 0%, rgb(255 255 255) 50%, rgb(0 255 90) 100%);
+    BACKGROUND-CLIP: text;
+    font-weight: bolder;
+    font-size: 40px;
+}
 .part-1{
     text-align: center;
     width: 60%;
@@ -397,12 +415,12 @@ font-size: 12px;
 
 .slider-0{
     width: 100%;
-    height: 60dvh;
+    height: 100dvh;
 }
 
 .holder-90{
     display: flex;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 57%, rgba(0, 213, 255, 0) 100%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 27%, rgba(0, 213, 255, 0) 100%);
     align-items: flex-end;
 
 }
@@ -430,25 +448,26 @@ position: absolute;
 
 .wn-0{
     /* background: linear-gradient(93.87deg,#148e9c,#21ff69); */
-    background: #1a1a1a;
-    padding: 11px 11px;
-    width: 160px;
+    background: rgb(26 26 26 / 47%);
+    padding: 11px;
+    width: 286px;
     margin: 19px 4px;
-    border-radius: 300px;
-    border: 0;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
     font-size: 18px;
     font-weight: 600;
     font-family: monospace;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    transition: cubic-bezier(0.215, 0.610, 0.355, 1) 0.4s;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 .wn-0:hover{
     transform: scale(0.96);
 }
 
 .anime-img-box{
-    height: 55dvh;
+    height: 90dvh;
     z-index: -1;
 }
 
@@ -481,19 +500,3 @@ position: absolute;
 }
 
 
-/* width */
-::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-  background: transparent;
-  }
-  
-  
