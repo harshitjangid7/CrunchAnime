@@ -1,4 +1,4 @@
 # CrunchAnime
-"Anime hub: Stream, discover, and discuss favorites!"
+"Unleash Your Imagination: Anime Odyssey Awaits!"
 
 ![master](display.png)
