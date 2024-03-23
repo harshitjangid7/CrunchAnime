@@ -42,12 +42,12 @@ header{
 }
 
 .main-header{
-    border-radius: 20px;
+    border-radius: 30px;
     background: #161617b4;
     backdrop-filter: blur(10px);
     height: 100%;
     display: flex;
-    height: 29px;
+    height: 35px;
     opacity: 1;
     justify-content: center;
     align-items: center;
@@ -295,6 +295,7 @@ font-size: 12px;
     border: 0;
     text-align: center;
     width: 145px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -546,9 +547,9 @@ position: absolute;
 }
 
 .black-box-0{
-    height: 450px;
+    height: 460px;
     width: 210px;
-    margin: 4px 9px;
+    margin: 14px 9px;
     display: grid;
     border-radius: 8px;
     background: #1a1a1a;
@@ -557,6 +558,7 @@ position: absolute;
 .poster-0-img{
     width: 100%;
     object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
     height: 256px;
 }
 
@@ -578,7 +580,7 @@ position: absolute;
 }
 
 .title-anime-black-box{
-    font-size: 21px;
+    font-size: 18px;
     text-transform: capitalize;
     font-weight: 600;
 }
@@ -702,3 +704,13 @@ position: absolute;
     background-size: 77px;
     background-position: 1px;
 }
+
+.slider-10{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
