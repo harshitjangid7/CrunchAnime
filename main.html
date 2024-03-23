@@ -43,11 +43,13 @@
     <header>
       <div class="main-header">
         <img class="user-logo" src="IMG/user.jpeg">
-        <span class="text">Playlist</span>
-        <span class="text">Gallery</span>
+        <span class="text">Home</span>
+        <span class="text">Collection</span>
+        <span class="text">Trending</span>
         <span class="text">About</span>
-        <span class="text">Contact</span>
-        <a href="index.html" style="text-decoration: none;"><input type="text" placeholder="Search" class="login-btn"></a>
+        <a href="index.html" style="text-decoration: none;"><button class="login-btn-1">Get Started</button></a>
+        <a href="collection.html" style="text-decoration: none;"><input type="text" placeholder="Search" class="login-btn"></a>
+      </div>
       </div>
     </header>
       <section id="main_html">
@@ -66,10 +68,10 @@
                <!-- ? <img class="anime-img-box" src="IMG/AAAABTYmlge88J4-0ouuHWDsP8VZBuoM_3FPfGZo-YMOixHeB1qduoBni9iahxi3zkEXNvwZ4Xez_JoRDiPq3hyLRyef43_fNRUJziyD.jpg"> -->
                <!-- <video class="anime-img-box" src="VIDEO/JUJUTSU KAISEN Shibuya Incident _ Official Trailer _ Netflix.mp4" loop autoplay></video> -->
                <video class="anime-img-box" loop muted id="autoplay">
-                <source src="VIDEO/JUJUTSU-KAISEN.mp4" type="video/mp4">
+                <source src="VIDEO/JUJUTSU KAISEN Shibuya Incident _ Official Trailer _ Netflix.mp4" type="video/mp4">
                </video>
             </div>
-            
+            <button onclick="toggleMute()" class="unmute"><i class="fa-solid fa-volume fa-2xl" style="color: #ffffff;"></i></button>
         </div>
       </div>
         <div class="title-of-anime">
@@ -294,6 +296,12 @@
       <script>
         window.onload = function() {
   document.getElementById("autoplay").play();
+}
+
+var video = document.getElementById('autoplay');
+
+function toggleMute(){
+  video.muted = !video.muted;
 }
       </script>
 </body>
