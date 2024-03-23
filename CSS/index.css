@@ -642,6 +642,7 @@ position: absolute;
 .rating-0{
     position: fixed;
     z-index: 3;
+    display: none;
     width: 423px;
     margin: 12PX;
     border-radius: 12px;
